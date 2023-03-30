@@ -28,7 +28,7 @@ SFG: PROC
         ; TODO: out a8
         ld c,#a8
         in b,(c)
-        ld e,#fe ; TODO: check
+        ld e,000001010b ; TODO: check
         out (c),e
         ld (SFG_YM2151_ADDRESS),a
         cp (hl)  ; R800 wait: ~4 bus cycles
